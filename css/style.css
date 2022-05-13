@@ -29,54 +29,79 @@ body {
     border-bottom: 1px solid gray;
 }
 .date-container{
-    width:30%;
+    width:15%;
     position: relative;
     float: left;
-    top:10px;
+    top:5px;
     padding:20px;
     height:50px;
     left:2%
 }
 #date-menu li{
-    diplay:block;
+    display:block;
     min-height:30px;
     font-size: 12px;
 }
 
+.todays-paper{
+    color: black;
+    text-decoration: white;
+}
+
 .title-logo a img{
     position: relative;
-    width:30%;
+    width:45%;
     float:left;
-    top:5px
+    top:5px;
+    left:10%;
+    min-width: 250px;
 
 }
+
+/* TODO rivere css di sign in e subscribe */
+/*
+.sign-wrapper{
+    position:relative;
+    width: 15%;
+    float: left;
+    right:10px;
+
+}
+*/
 
 .sign-in {
     width:55px;
     position: relative;
     float:left;
-    padding: 15px;
-    left:11%;
-    top:15px;
+    padding:0;
+    right:1%;
+    top:20px;
+    color: black;
+
 }
 
 .subscribe-button{
-    position: absolute;
-    right:5%;
+    position: relative;
+    right:0;
     top:15px;
     float:left;
-    clear:left;
+
+
 }
 .subscribe-button a{
-    width:15%;
     position: relative;
-
     top:0;
-
 }
 
 .subscribe-button a button{
     position:relative;
     padding: 10px;
     left:20%;
+    padding-right: 20px;
+    padding-left: 20px;
+    background-color: rgb(254, 213, 97);
+    border-color:rgb(254, 213, 97);
+    text-transform: uppercase;
+
+
 }
