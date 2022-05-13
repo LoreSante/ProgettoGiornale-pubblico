@@ -1,0 +1,20 @@
+versione 0.1 menu
+
+    <nav class="navbar">
+        <div class="container">
+            <ul id="menu-primary">
+                <li>
+                    <div class="date-container">
+                        <ul id="date-menu">
+                            <li>Thursday, May 12, 2022</li>
+                            <li><a href="#" class="todays-paper"><b>Todays paper</b></a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#" class="title-logo"><img class="title-logo" src="images/logo.png" alt=""></a></li>
+
+                <li><a href="#" class="sign-in">SIGN IN</a></li>
+                <li><a href="#" class="subscribe-button"><button class="subscribe-button"><b>Subscribe</b></button></a></li>
+            </ul>
+        </div>
+    </nav>
