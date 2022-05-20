@@ -18,3 +18,15 @@ versione 0.1 menu
             </ul>
         </div>
     </nav>
+
+versione 0.1 sign-in/subscribe
+
+                <div class="sign-wrapper">
+                        <div class="sign-in">
+                            <a href="#" class="sign-in">SIGN IN</a>
+                        </div>
+                        <div class="subscribe-button">
+                            <a href="#" class="subscribe-button"><button class="subscribe-button"><b>Subscribe</b></button></a>
+                        </div>
+
+                </div>
