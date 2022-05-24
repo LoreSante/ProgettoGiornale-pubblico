@@ -21,14 +21,18 @@ body {
     border-bottom: 1px solid #080808;
     position: absolute;
 }
-
-.container {
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.menu-wrapper{
     height: 150px;
     width:100%;
     margin:0 auto;
     border-bottom: 1px solid gray;
     display:flex;
-    flex-direction: column
+    flex-direction: column;
+    justify-content:center;
 }
 
 .menu-primary{
@@ -130,6 +134,19 @@ body {
     height: 50px;
 
 }
+
+.adv{
+    align-self: center;
+    padding:20px;
+}
+
+.news{
+    margin: 20px;
+    display:flex;
+    flex-direction: row;
+
+}
+
 
 /*
 
