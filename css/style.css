@@ -26,7 +26,6 @@ body {
     flex-direction: column;
 }
 .menu-wrapper{
-    height: 150px;
     width:100%;
     margin:0 auto;
     border-bottom: 1px solid gray;
@@ -70,14 +69,7 @@ body {
 }
 
 .title-logo{
-   /* position: relative;
-    width:80%;
-    float:left;
-    top:5px;
-    left:2%;
-    min-width:480px
 
-    */
     flex-basis: 70%;
     max-width: 100%;
 
@@ -94,15 +86,7 @@ body {
 }
 
 /* TODO rivere css di sign in e subscribe */
-/*
-.sign-wrapper{
-    position:relative;
-    width: 15%;
-    float: left;
-    right:10px;
 
-}
-*/
 .sign-wrapper{
     flex-basis: 15%;
     display:flex;
@@ -133,6 +117,48 @@ body {
     width: 120px;
     height: 50px;
 
+}
+
+.menu-secondary{
+    display: flex;
+    flex-direction: row;
+
+
+
+}
+.hamburger-menu{
+    display: flex;
+    flex-direction: row;
+    flex-basis:10%;
+    justify-content: space-evenly;
+}
+
+.hamburger, .search{
+    display: inline;
+    margin: 5px;
+
+}
+
+.ham1, .ham2, .ham3{
+    background-color: black;
+    width:16px;
+    height:2px;
+    position:relative;
+    margin: 3px 0 0 0;
+    display: block;
+
+}
+
+#topic-list li{
+    display: inline-block;
+    text-transform: uppercase;
+
+    padding:12px;
+
+}
+#topic-list li a{
+    text-decoration-line: none;
+    color:black;
 }
 
 .adv{
