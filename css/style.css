@@ -1,3 +1,4 @@
+
 /* regola genarli */
 *{
     margin:0;
@@ -20,10 +21,16 @@ body {
     min-height: 50px;
     border-bottom: 1px solid #080808;
     position: absolute;
+    width:100%;
+
 }
 .container{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-content: center;
+
+
 }
 .menu-wrapper{
     width:100%;
@@ -32,13 +39,24 @@ body {
     display:flex;
     flex-direction: column;
     justify-content:center;
+    align-content: center;
+
+}
+
+@media all and (max-width: 1100px){
+    .menu-wrapper {
+        margin: 0 auto;
+        border-bottom: 2px solid black;
+        display: flex;
+        height: 60px;
+    }
 }
 
 .menu-primary{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-content: center;
+
 }
 
 
@@ -57,7 +75,7 @@ body {
     font-size: 12px;
 
 }
-@media (max-width: 900px) {
+@media (max-width: 1100px) {
     .date-container {
         display: none;
     }
@@ -69,26 +87,40 @@ body {
 }
 
 .title-logo{
-
     flex-basis: 70%;
-    max-width: 100%;
-
-
+    display: flex;
+    justify-content: space-around;
+    align-self: center;
+}
+.title-logo a img{
+    max-width:500px;
 }
 
-
-@media (max-width: 900px ){
+@media (max-width: 1100px ){
     .title-logo{
-        position:relative;
-        width:95%;
 
     }
 }
 
-/* TODO rivere css di sign in e subscribe */
+/*fixme rivedere immagine titolo */
+/*TODO Responsività e mobile */
+
+@media (max-width: 470px){
+    .title-logo a{
+        content: url(../images/logo.png);
+        width: 140px;
+        height:60px;
+        position:absolute;
+        left:80px;
+
+
+    }
+}
+
+
 
 .sign-wrapper{
-    flex-basis: 15%;
+    flex-basis: 180px;
     display:flex;
     flex-direction: row;
     align-content: center;
@@ -98,7 +130,7 @@ body {
 }
 
 
-@media (max-width: 900px) {
+@media (max-width: 1100px) {
     .sign-wrapper {
        display: none;
     }
@@ -122,6 +154,8 @@ body {
 .menu-secondary{
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-self: center;
 
 
 
@@ -129,8 +163,17 @@ body {
 .hamburger-menu{
     display: flex;
     flex-direction: row;
-    flex-basis:10%;
-    justify-content: space-evenly;
+    flex-basis:5%;
+    justify-content: space-around;
+}
+
+@media all and (max-width: 1100px){
+    .hamburger-menu{
+        position: absolute;
+        left: 20px;
+        top:10px;
+
+    }
 }
 
 .hamburger, .search{
@@ -149,6 +192,7 @@ body {
 
 }
 
+
 #topic-list li{
     display: inline-block;
     text-transform: uppercase;
@@ -161,18 +205,67 @@ body {
     color:black;
 }
 
+@media all and (max-width: 1100px){
+    #topic-list{
+        display: none;
+    }
+}
+
 .adv{
     align-self: center;
-    padding:20px;
+    padding:10px;
 }
+
+/* start NEWS STYLE RULES */
 
 .news{
     margin: 20px;
     display:flex;
     flex-direction: row;
+    max-width: 1260px;
+    align-self: center;
+}
+
+.piece1{
+    flex-basis:45%
+}
+.piece2{
+    flex-basis: 35%
+}
+
+.latest{
+    flex-basis: 20%;
+}
+
+.piece1, .piece2,.latest{
+    margin:10px;
+    display:flex;
+    flex-direction: column;
+}
+
+.piece1-img, .title1, .piece2-img, .title2{
+    margin-bottom:10px;
+}
+
+.latest-title{
+    border-bottom: 1px solid black;
+    padding-bottom: 12px;
+}
+
+.a-latest{
+    border-bottom: 1px solid grey;
+    padding: 12px;
 
 }
 
+.a-latest a{
+    color:black;
+    text-decoration: white;
+}
+
+.a-latest a
+
+/*end NEWS STYLE RULES */
 
 /*
 
