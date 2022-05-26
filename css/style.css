@@ -19,8 +19,8 @@ body {
 
 .navbar {
     min-height: 50px;
-    border-bottom: 1px solid #080808;
-    position: absolute;
+
+    position: relative;
     width:100%;
 
 }
@@ -42,6 +42,7 @@ body {
     flex-direction: column;
     justify-content:center;
     align-content: center;
+
 
 
 }
@@ -372,5 +373,80 @@ body {
     margin-bottom: 16px;
 }
 
+
 /*end TOPIC RULES */
 
+/*start FOOTER STYLE RULES */
+
+
+
+footer {
+    font-family:"Helvetica Neue", Helvetica, "sans-serif";
+    font-size: 14px;
+    color: #000;
+    background-color: #fff;
+    justify-content: center;
+    display: flex;
+
+
+}
+
+.footer-container{
+    display:flex;
+    flex-direction: row;
+    justify-content:space-around;
+    width:100%;
+    max-width: 1260px;
+    margin-bottom: 30px;
+}
+
+.list-wrapper{
+    display:flex;
+    flex-direction: column;
+    flex-basis:210px;
+}
+
+.list-title{
+    padding-top: 40px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid lightgray;
+    margin-bottom: 10px;
+}
+
+#list li{
+    text-decoration: none;
+}
+
+#list li a{
+    text-decoration: none;
+    color: black;
+}
+
+.copyright{
+    height: 80px;
+    width: 100%;
+    background-color: darkgray;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+
+}
+
+.copyright-text{
+    padding-top: 20px;
+}
+
+.social-simbols{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-basis: 10%;
+    align-content: center;
+}
+
+.social-simbols img{
+    height:16px;
+    width: 16px;
+    align-self: center;
+}
