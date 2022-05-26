@@ -24,11 +24,13 @@ body {
     width:100%;
 
 }
+
 .container{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
+
 
 
 }
@@ -40,6 +42,7 @@ body {
     flex-direction: column;
     justify-content:center;
     align-content: center;
+
 
 }
 
@@ -56,13 +59,17 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    width:100%;
+    max-width: 1260px;
+    align-self: center;
+    /*max-width:1260px;*/
 
 }
 
 
 .date-container{
 
-    flex-basis:10%;
+    /*flex-basis:10%;*/
     align-self: center;
     padding-left: 20px;
 
@@ -104,6 +111,7 @@ body {
 
 /*fixme rivedere immagine titolo */
 /*TODO Responsività e mobile */
+/*todo HOVER-STUFF*/
 
 @media (max-width: 470px){
     .title-logo a{
@@ -156,6 +164,9 @@ body {
     flex-direction: row;
     justify-content: center;
     align-self: center;
+    width:100%;
+    max-width: 1260px;
+
 
 
 
@@ -213,7 +224,7 @@ body {
 
 .adv{
     align-self: center;
-    padding:10px;
+    margin:20px;
 }
 
 /* start NEWS STYLE RULES */
@@ -222,10 +233,15 @@ body {
     margin: 20px;
     display:flex;
     flex-direction: row;
+    width:100%;
     max-width: 1260px;
     align-self: center;
 }
-
+.piece1, .piece2,.latest{
+    margin:10px;
+    display:flex;
+    flex-direction: column;
+}
 .piece1{
     flex-basis:45%
 }
@@ -237,11 +253,7 @@ body {
     flex-basis: 20%;
 }
 
-.piece1, .piece2,.latest{
-    margin:10px;
-    display:flex;
-    flex-direction: column;
-}
+
 
 .piece1-img, .title1, .piece2-img, .title2{
     margin-bottom:10px;
@@ -262,55 +274,103 @@ body {
     color:black;
     text-decoration: white;
 }
-
-.a-latest a
-
 /*end NEWS STYLE RULES */
 
-/*
+/*start TOPIC RULES */
 
-.sign-in {
-    width:55px;
-    position: relative;
-    float:left;
-    padding:0;
-    top:20px;
-    color: black;
+.topic1{
+    display:flex;
+    flex-direction: column;
+    max-width: 1260px;
+    align-self: center;
+    width:100%;
+    max-width: 1260px;
 
 }
-*/
-
-
-
-
-/* prima versione
-.sign-in {
-    width:55px;
-    position: relative;
-    float:left;
-    padding: 15px;
-    left:11%;
-    top:15px;
-}
-
-.subscribe-button{
-    position: absolute;
-    right:5%;
-    top:15px;
-    float:left;
-    clear:left;
-}
-.subscribe-button a{
-    width:15%;
-    position: relative;
-
-    top:0;
+.topic-head{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-top: 2px solid black;
 
 }
 
-.subscribe-button a button{
-    position:relative;
-    padding: 10px;
-    left:20%;
+.topic-title{
+    align-self: flex-start;
 }
- */
+
+.topic-title a, .more a{
+    color:black;
+    text-decoration: none;
+}
+
+.more a{
+    align-self: flex-end;
+    background-image:url(https://www.inquirer.com/pf/resources/images/rightArrow.svg?d=286);
+    background-position: 100%;
+    padding-right:20px;
+    background-size:16px;
+    background-repeat:no-repeat;
+}
+
+
+.front-piece-1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 16px;
+    border-bottom: 1px solid lightgray;
+}
+
+.front-piece-text{
+   /*
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    */
+}
+
+.front-piece-text h1, .abstract{
+    margin-bottom: 12px;
+}
+.abstract, .time-ago{
+    color: gray;
+}
+.author{
+    color:black;
+}
+
+.pieces-wrapper-1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 16px;
+
+}
+
+.pieces-subwrapper-1{
+    display: flex;
+    flex-direction: column;
+    margin-inline: 16px;
+    width:100%;
+
+}
+
+.small-piece{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.border-gray{
+    border-bottom: 1px solid lightgray;
+    border-left:1px solid lightgray;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+/*end TOPIC RULES */
+
