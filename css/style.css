@@ -104,11 +104,6 @@ body {
     max-width:500px;
 }
 
-
-
-
-/*todo HOVER-STUFF*/
-
 @media (max-width: 600px){
 
     .title-logo a {
@@ -259,15 +254,23 @@ body {
 .piece1{
     flex-basis:45%
 }
+
 .piece2{
     flex-basis: 35%
+}
+
+.piece1 a, .piece2 a{
+    color:black;
+    text-decoration: none;
 }
 
 .latest{
     flex-basis: 20%;
 }
 
-
+.latest a:hover, .piece1 a:hover, .piece2 a:hover{
+    color:#1a6aff;
+}
 
 .piece1-img, .title1, .piece2-img, .title2{
     margin-bottom:10px;
@@ -434,6 +437,15 @@ body {
     }
 }
 
+.author a, .front-piece-text a, .small-piece-text a{
+    text-decoration: none;
+    color:black;
+}
+
+.front-piece-text a:hover, .small-piece-text a:hover,  .author:hover{
+    color:#1a6aff;
+}
+
 /*end TOPIC RULES */
 
 /*start FOOTER STYLE RULES */
@@ -493,19 +505,22 @@ footer {
 }
 
 #list li{
-    text-decoration: none;
     padding: 4px;
 }
 
 #list li a{
-    text-decoration: none;
+    text-decoration-color:white;
     color: black;
+}
+
+#list li a:hover{
+    text-decoration-color:black;
 }
 
 .copyright{
     min-height: 80px;
     width: 100%;
-    background-color: darkgray;
+    background-color: #eeeeee;
     display:flex;
     flex-direction: row;
     justify-content: space-around;
@@ -547,17 +562,12 @@ footer {
 .social-simbols img{
     height:16px;
     width: 16px;
-
-
 }
 
 @media all and (max-width:800px){
     .social-simbols{
-
         width:123px;
         align-self: center;
-
-
-
     }
 }
+
